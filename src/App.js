@@ -1,14 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
 import SearchParams from "./SearchParams";
-import useDropdown from "./useDropdown";
 
 const App = () => {
   return (
-    <div>
-      <h1>Adopt Me!</h1>
-      <SearchParams />
-    </div>
+    <React.StrictMode>
+      <div>
+        <h1>Adopt Me!</h1>
+        <SearchParams />
+      </div>
+    </React.StrictMode>
   );
 };
 
