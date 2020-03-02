@@ -7,7 +7,9 @@
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "jest:update": "jest -u",
+    "jest:covarage": "jest --covarage"
   },
   "author": "",
   "license": "MIT",
@@ -23,12 +25,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "jest": "^25.1.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   },
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
     "@reach/router": "^1.3.1",
+    "@testing-library/react": "^9.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
